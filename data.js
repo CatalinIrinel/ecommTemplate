@@ -1,7 +1,22 @@
+import bcrypt from 'bcryptjs';
 const data = {
+  users: [
+    {
+      name: 'admin',
+      email: 'admin@admin.ro',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: true,
+    },
+    {
+      name: 'user 1',
+      email: 'user@user.ro',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
-      _id: '1',
+      // _id: '1',
       name: 'produsul 1',
       slug: 'produsul-1',
       category: 'categoria-1',
@@ -14,7 +29,7 @@ const data = {
       description: 'descrierea produsului 1',
     },
     {
-      _id: '2',
+      // _id: '2',
       name: 'produsul 2',
       slug: 'produsul-2',
       category: 'categoria-2',
@@ -27,7 +42,7 @@ const data = {
       description: 'descrierea produsului 2',
     },
     {
-      _id: '3',
+      // _id: '3',
       name: 'produsul 3',
       slug: 'produsul-3',
       category: 'categoria-3',
@@ -40,7 +55,7 @@ const data = {
       description: 'descrierea produsului 3',
     },
     {
-      _id: '4',
+      // _id: '4',
       name: 'produsul 4',
       slug: 'produsul-4',
       category: 'categoria-4',

@@ -17,7 +17,7 @@ main {
 
 .btn-primary {
   background-color: hsl(283, 87%, 41%);
-  border: 2px solid hsl(283, 87%, 41%);
+  border: 0.15rem solid hsl(283, 87%, 41%);
 }
 .btn-primary:hover {
   background-color: transparent;
@@ -39,6 +39,12 @@ main {
 .product.card {
   width: 300px;
 }
+
+@media screen and (max-width: 600px) {
+  .product.card {
+    width: 100%;
+  }
+}
 .product img {
   height: 410px;
 }
@@ -47,10 +53,20 @@ main {
   max-width: 100%;
 }
 
-.img-thubnail {
+.img-thumbnail {
   height: 80px;
 }
 
 .small-container {
   max-width: 600px;
+}
+
+.checkout-steps > div {
+  border-bottom: 0.2rem solid #a0a0a0;
+  color: #a0a0a0;
+}
+
+.checkout-steps > div.active {
+  border-bottom: 0.2rem solid hsl(283, 87%, 41%);
+  color: hsl(283, 87%, 41%);
 }
